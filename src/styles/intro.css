@@ -1,0 +1,114 @@
+.intro {
+  display: flex;
+  position: absolute;
+  left: 24%;
+  top: 30%;
+  width: 55vw;
+  height: 50vh;
+  z-index: 5;
+  border: 3px solid;
+  border-image: linear-gradient(90deg, white 50%, black 50%) 1;
+  backdrop-filter: blur(3px);
+  /* background-color: red; */
+}
+
+.intro .sub-box {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.intro img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: auto;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: karla;
+  gap: 0.875rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.intro-content h1 {
+  font-size: 5rem;
+}
+
+.intro-content h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.intro-content p {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.content {
+  /* border: 3px solid white; */
+  border-right: none;
+}
+
+.img {
+  /* border: 3px solid black; */
+  border-left: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    border: 3px solid white;
+    width: 70vw;
+    height: 71vh;
+    left: 17%;
+    top: 15%;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  .intro .sub-box {
+    width: 100%;
+    position: static;
+    display: flex;
+  }
+
+  .intro-content {
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .intro-content :where(h1, h3, p) {
+    padding: 0;
+  }
+
+  .intro-content h1 {
+    font-size: 4rem;
+  }
+
+  .intro-content h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .intro-content p {
+    font-size: 1.12rem;
+  }
+
+  .intro-content h3 {
+    color: rgb(230, 230, 230);
+  }
+
+  .intro-content p {
+    color: rgb(206, 205, 205);
+    font-size: 1.05rem;
+  }
+  .intro img {
+    filter: drop-shadow(3px 5px 7px rgb(235, 233, 233));
+    width: 90%;
+  }
+}

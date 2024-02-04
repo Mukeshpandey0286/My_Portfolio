@@ -1,0 +1,47 @@
+.skills-container {
+  font-family: "Roboto mono";
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 5rem;
+}
+
+.skills-heading {
+  color: white;
+  font-size: 10rem;
+  font-weight: 900;
+  width: 100%;
+  height: 100%;
+  font-family: "Ubuntu mono";
+  position: fixed;
+  left: 20%;
+  top: 72%;
+}
+
+.skills-heading span {
+  color: rgb(121, 121, 121);
+  display: flex;
+  line-height: 0.9;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    margin: 30vh 0;
+  }
+
+  .skills-heading {
+    top: 17%;
+    font-size: 7rem;
+    letter-spacing: 100px;
+  }
+
+  #skills .line {
+    background: black !important;
+  }
+}

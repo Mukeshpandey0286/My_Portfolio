@@ -1,0 +1,118 @@
+#home {
+  font-size: 1.3rem;
+  height: 93vh;
+  width: 100vw;
+
+  overflow: hidden;
+}
+
+#home::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("../assets/images/undraw_proud_coder_re_exuy.svg") no-repeat
+    center center/contain;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.home-roter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1rem;
+  transition: all 1s ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transition-delay: 0;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.home-roter svg {
+  width: 10vw;
+  animation: rotate infinite 1.5s linear;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+span {
+  position: fixed;
+  z-index: 1;
+}
+
+#home a {
+  text-decoration: none;
+  color: black;
+  font-family: karla;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+#home span:nth-of-type(1) {
+  top: 4%;
+  right: 3%;
+}
+
+#home span:nth-of-type(2) {
+  top: 50%;
+  right: 3%;
+}
+#home span:nth-of-type(3) {
+  bottom: 3%;
+  right: 26%;
+}
+#home span:nth-of-type(4) {
+  bottom: 3%;
+  left: 30%;
+}
+#home span:nth-of-type(5) {
+  top: 50%;
+  left: 3%;
+}
+@media only screen and (max-width: 768px) {
+  .dark {
+    display: none;
+  }
+
+  #home {
+    background: black;
+    z-index: 1;
+    color: white;
+  }
+
+  #home::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("../assets/images/undraw_mobile_development_re_wwsn.svg")
+      no-repeat center center/contain;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  .home-roter svg {
+    color: rgb(244, 222, 25);
+    width: 6rem;
+  }
+
+  #home a {
+    color: white;
+    font-size: 0.875rem;
+  }
+
+  .line {
+    background-color: white !important;
+  }
+}

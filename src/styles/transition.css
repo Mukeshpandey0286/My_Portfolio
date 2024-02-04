@@ -1,0 +1,35 @@
+.trans1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+
+  background: #9b59b6;
+}
+
+.trans2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+
+  background: rgb(255, 208, 0);
+}
+
+.trans3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background: #b2b6b9;
+  /* background: #b1b1b1; */
+}

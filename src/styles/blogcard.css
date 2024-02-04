@@ -1,0 +1,68 @@
+.blog-card {
+  width: calc(10rem + 15vw);
+  text-decoration: none;
+  height: 20rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "karla";
+  font-weight: 700;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  border-radius: 0.4rem;
+  z-index: 5;
+}
+
+.blog-card:hover {
+  background-color: rgb(41, 40, 40);
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover h6 {
+  color: rgb(221, 220, 220);
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover h7 {
+  color: rgb(219, 219, 219);
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover p {
+  color: rgb(219, 219, 219);
+  transition: all 0.4s ease;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+.blog-card .image {
+  width: 100%;
+  border: 1px sold black;
+}
+
+.blog-card .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-card h6 {
+  font-size: 1.35rem;
+  color: rgb(34, 34, 34);
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid rgb(61, 61, 61);
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-card {
+    width: calc(10rem + 40vw);
+    height: 22rem;
+  }
+}
